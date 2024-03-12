@@ -1,5 +1,5 @@
 import React from "react";
- import styled from "styled-components"
+import styled from "styled-components"
 
 
  export default function CharacterCard(props) {
@@ -25,6 +25,7 @@ import React from "react";
 
 
    return(
+    
      <Card>
 
        <Header>{props.name}</Header>
@@ -34,7 +35,7 @@ import React from "react";
          
 
      </Card>
-
+     
    )
  }
 
