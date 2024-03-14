@@ -1,14 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import "./index.css";
-import App from "./App";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
+// can name "App" anything but React convention is to name the component
+// the same name as the file, both capitalized
+import App from "./components/App.js";
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById("root")
-);
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
